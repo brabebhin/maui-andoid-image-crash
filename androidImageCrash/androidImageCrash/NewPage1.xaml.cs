@@ -33,7 +33,7 @@ public partial class NewPage1 : ContentPage
 
         }
 
-        foreach(var f in files)
+        foreach(var f in folder.GetFiles())
             source.Add(new Item(ImageSource.FromFile(f.FullName)));
 
 
